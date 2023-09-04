@@ -1,0 +1,10 @@
+$color-primary: red;
+$text-primary: blue;
+
+.container {
+    background-color: red;
+
+    h1 {
+        color: $text-primary;
+    }
+}

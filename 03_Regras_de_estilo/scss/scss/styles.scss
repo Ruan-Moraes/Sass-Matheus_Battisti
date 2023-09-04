@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+div {
+    background-color: lightgray;
+    
+    p {
+        color: lightblue;
+    }
+}
+
+main {
+    background-color: lightgray;
+    color: lightblue;
+
+    p.p-red {
+        color: red;
+    }
+}
+
+li {
+    color: purple;
+}
+
+ol {
+    > li {
+        color: blue;
+    }
+}
+
+a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: green;
+    border: 1px solid blue;
+    margin: 1rem;
+    display: block;
+    width: max-content;
+}
+
+.container {
+    width: 16rem;
+    height: 16rem;
+    background-color: gray;
+    padding: 1rem;
+    margin: 1rem;
+    &-p {
+        color: red;
+    }
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 1px solid blue;
+    margin: 1rem;
+    border-radius: 8px;
+    background-color: lightblue;
+    color: white;
+    transition: .3s;
+    &:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+    &-success {
+        background-color: green;
+        color: white;
+        border-color: green;
+        &:hover {
+            color: green;
+        }
+    }
+
+    &-blue {
+        background-color: blue;
+        color: white;
+        border-color: blue;
+        &:hover {
+            color: blue;
+        }
+    }
+    
+    &-danger {
+        background-color: red;
+        color: white;
+        border-color: red;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+%text-base-style {
+    background-color: yellow;
+    border: 1px dotted red;
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 5rem;
+    @extend %text-base-style;
+}
+
+.sub-title {
+    font-size: 3rem;
+    color: blue;
+    @extend %text-base-style;
+}

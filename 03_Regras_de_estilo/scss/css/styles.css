@@ -1,0 +1,100 @@
+div {
+  background-color: lightgray;
+}
+div p {
+  color: lightblue;
+}
+
+main {
+  background-color: lightgray;
+  color: lightblue;
+}
+main p.p-red {
+  color: red;
+}
+
+li {
+  color: purple;
+}
+
+ol > li {
+  color: blue;
+}
+
+a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: green;
+  border: 1px solid blue;
+  margin: 1rem;
+  display: block;
+  width: max-content;
+}
+
+.container {
+  width: 16rem;
+  height: 16rem;
+  background-color: gray;
+  padding: 1rem;
+  margin: 1rem;
+}
+.container-p {
+  color: red;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid blue;
+  margin: 1rem;
+  border-radius: 8px;
+  background-color: lightblue;
+  color: white;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: transparent;
+  color: black;
+}
+.btn-success {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+.btn-success:hover {
+  color: green;
+}
+.btn-blue {
+  background-color: blue;
+  color: white;
+  border-color: blue;
+}
+.btn-blue:hover {
+  color: blue;
+}
+.btn-danger {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+.btn-danger:hover {
+  color: red;
+}
+
+.sub-title, .title {
+  background-color: yellow;
+  border: 1px dotted red;
+  padding: 1rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.sub-title {
+  font-size: 3rem;
+  color: blue;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,23 @@
+$bg-color: purple;
+$text-primary: green;
+
+.container {
+    background-color: $bg-color;
+    text-align: center;
+    padding: 1rem;
+
+    #title {
+        color: $text-primary;
+        font-size: 3rem;
+        font-style: italic;
+    }
+}
+
+.container-bottom {
+    background-color: blue;
+    padding: 5rem;
+
+    p {
+        text-decoration: dashed;
+    }
+}

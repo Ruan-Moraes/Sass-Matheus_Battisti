@@ -1,0 +1,20 @@
+.container {
+  background-color: purple;
+  text-align: center;
+  padding: 1rem;
+}
+.container #title {
+  color: green;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.container-bottom {
+  background-color: blue;
+  padding: 5rem;
+}
+.container-bottom p {
+  text-decoration: dashed;
+}
+
+/*# sourceMappingURL=styles.css.map */

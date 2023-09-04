@@ -1,0 +1,11 @@
+.container {
+  background-color: #ccc;
+}
+.container h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
