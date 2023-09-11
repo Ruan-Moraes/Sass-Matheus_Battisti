@@ -1,0 +1,141 @@
+.btn {
+  background-color: #ddd;
+  color: #000;
+  padding: 0.8rem 0.6rem;
+  border-radius: 8px;
+}
+
+.esp-medio, .esp-menor {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.p-esp {
+  color: red;
+  background-color: yellow;
+  padding: 0.8rem;
+  border: 2px solid red;
+}
+.p-esp:hover {
+  border-color: blue;
+  color: blue;
+}
+
+body {
+  margin: 2rem;
+}
+
+h2 {
+  color: red;
+  background-color: yellow;
+  padding: 0.8rem;
+  border: 2px solid red;
+  border-color: green;
+  color: green;
+}
+h2:hover {
+  border-color: blue;
+  color: blue;
+}
+
+.esp-menor {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid red;
+  color: #915;
+  background-color: #369;
+}
+
+.esp-medio {
+  padding: 1rem;
+  margin: 1rem;
+  border: 4px dotted blue;
+  color: #fff;
+  background-color: #321;
+}
+
+.esp-maior {
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid green;
+  color: gold;
+  background-color: #000;
+}
+
+.esp-maior-ainda {
+  padding: 5rem;
+  margin: 5rem;
+  border: 3px double gold;
+}
+
+.container-menor {
+  width: 600px;
+  border: 1px solid blue;
+  border: 1px solid red;
+}
+
+.container-maior {
+  border: 1px solid red;
+  width: 100rem;
+  border: 2px solid green;
+}
+
+.fonte-pequena {
+  font-size: 5px;
+  color: blue;
+  border: 2px solid green;
+}
+
+.fonte-grande {
+  font-size: 25px;
+  color: red;
+}
+
+.teste-1 {
+  width: 100px;
+  background-color: red;
+}
+
+.teste-2 {
+  width: 500px;
+  background-color: green;
+}
+
+.teste-3 {
+  width: 40px;
+  padding: 1.5rem;
+  background-color: green;
+}
+
+.title-40px {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.title-60px {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.title-100px {
+  font-size: 100px;
+  line-height: 120px;
+}
+
+.p-1 {
+  color: lightblue;
+  background-color: #000;
+}
+
+.p-2 {
+  color: red;
+  background-color: #000;
+}
+
+.p-3 {
+  color: teal;
+  background-color: #000;
+}
+
+/*# sourceMappingURL=styles.css.map */

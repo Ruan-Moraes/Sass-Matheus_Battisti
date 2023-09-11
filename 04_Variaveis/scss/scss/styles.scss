@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@import "variables";
+
+h1 {
+    color: $color-primary;
+    border: $border;
+}
+
+p {
+    color: $color-primary;
+    border: $border;
+    font-size: $main-font;
+    margin: #{$mg + 6px};
+    padding: #{$px + $py};
+}
+
+a {
+    color: $color-primary;
+}
+
+div {
+    $border: 3px dotted purple;
+
+    p{
+        background-color: $color-secondary;
+        border: $border;
+
+        span {
+            border: $border;
+            color: $color-tertiary;
+        }
+    }
+}
+
+h2 {
+    $color-primary: green;
+    
+    color: $color-primary;
+}

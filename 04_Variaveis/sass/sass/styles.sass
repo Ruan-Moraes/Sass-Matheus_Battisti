@@ -1,0 +1,36 @@
+@charset "UTF-8"
+
+@import "variables"
+@import 'variables'
+
+h1
+    color: $text-color
+    border: $border
+
+p
+    color: $text-color
+    border: $border
+    font-size: $main-font
+    margin: #{$mx + 10px}
+    padding: #{$px + $py}
+
+a
+    color: $text-color
+
+div
+    // Escopo local
+    p
+        $font-color: #AAA
+        $span-color: red
+        $border: 3px dotted purple
+        color: $font-color
+        background: $bg-color
+        // Shadowing
+        border: $border
+
+        span
+            color: $span-color
+            border: $border
+
+h2
+    color: $h2-color

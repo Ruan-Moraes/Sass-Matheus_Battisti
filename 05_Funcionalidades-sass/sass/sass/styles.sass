@@ -1,0 +1,92 @@
+@charset "UTF-8"
+
+@import "variables"
+@import "button"
+@import "mixins"
+@import "plugins"
+@import "functions"
+
+body
+    margin: 2rem
+
+.p-esp
+    @extend %special
+
+h2
+    @include special()
+    @include green()
+
+.esp-menor
+    @include espacamento(.5rem, .5rem)
+    @include custom-border(solid, red)
+    @include colors($backgroud-color: #369 ,$font: #915)
+    @extend %font-pattern
+
+.esp-medio
+    @include espacamento(1rem, 1rem)
+    @include custom-border(dotted, blue, 4px)
+    @include colors($backgroud-color: #321)
+    @extend %font-pattern
+
+.esp-maior
+    @include espacamento(2rem, 2rem)
+    @include custom-border(solid, green)
+    @include colors($font: gold)
+    
+.esp-maior-ainda
+    $p: 5rem
+    $m: 5rem
+
+    @include espacamento($p, $m)
+    @include custom-border(double, gold, 3px)
+
+$medida: 4
+
+.container-menor
+    width: 100px * ($medida + 2)
+    @include custom-border(solid, blue)
+    border: custom-border-function()
+
+.container-maior
+    @include custom-border(solid, red)
+    width: 25rem * $medida
+    border: custom-border-function(2)
+
+.fonte-pequena
+    font-size: 5px
+    color: text-color(5)
+    border: custom-border-function(2)
+
+.fonte-grande
+    font-size: 25px
+    color: text-color(25)
+
+.teste-1
+    width: custom-width()
+    background-color: red
+
+.teste-2
+    width: custom-width($width: 1000px)
+    background-color: green
+
+.teste-3
+    width: custom-width($division: 5)
+    padding: 1.5rem
+    background-color: cor(5, 5)
+
+$fonts: 40px, 60px, 100px
+
+@each $font in $fonts
+    .title-#{$font}
+        font-size: $font
+        line-height: $font * 1.2
+
+@for $i from 1 through 3
+    .p-#{$i}
+        @if $i == 1
+            color: lightblue
+        @else if $i == 2
+            color: red
+        @else if $i == 3
+            color: teal
+        background-color: #000
