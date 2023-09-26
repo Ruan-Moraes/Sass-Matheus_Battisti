@@ -1,7 +1,6 @@
 @use "../../1-base/variables";
 @use "../../3-modules/mixins";
 
-
 .BannersNew__Container {
   @include mixins.container;
   display: flex;
@@ -62,7 +61,7 @@
       .Content_ViewMore {
         font-size: 1.25rem;
         color: variables.$light-color;
-        transition: text-shadow 0.4s;
+        transition: text-shadow variables.$transition-animations;
         &:hover {
           text-shadow: 2px 2px 8px variables.$dark-color;
         }
@@ -73,7 +72,7 @@
           font-size: 1rem;
           background-color: variables.$bg-color;
           border-radius: 999px;
-          transition: scale 0.4s;
+          transition: scale variables.$transition-animations;
           &:hover {
             scale: 1.1;
           }

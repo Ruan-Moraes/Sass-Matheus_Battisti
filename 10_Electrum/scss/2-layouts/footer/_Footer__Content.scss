@@ -4,7 +4,7 @@
 .Content__FooterContainer {
   @include mixins.container;
   display: flex;
-  color: variables.$gray-text-color;
+  color: variables.$secondary-color;
   @include mixins.lg {
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,11 @@
       gap: 1rem;
 
       a {
-        color: variables.$gray-text-color;
+        color: variables.$secondary-color;
+        transition: color variables.$transition-animations;
+        &:hover {
+          color: variables.$light-color;
+        }
       }
     }
   }

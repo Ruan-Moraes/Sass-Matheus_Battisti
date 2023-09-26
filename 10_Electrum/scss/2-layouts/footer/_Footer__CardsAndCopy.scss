@@ -18,9 +18,9 @@
     }
 
     i {
-      color: variables.$gray-text-color;
+      color: variables.$secondary-color;
       cursor: pointer;
-      transition: color 0.4s;
+      transition: color variables.$transition-animations;
       &:hover {
         color: variables.$primary-color;
       }

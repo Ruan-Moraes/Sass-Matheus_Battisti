@@ -11,7 +11,7 @@
   align-items: center;
   gap: 1.5rem;
   text-align: center;
-  border-top: 2px solid variables.$gray-text-color;
+  border-top: 2px solid variables.$secondary-color;
 
   .Newsletter__Title {
     @extend %title;
@@ -26,7 +26,7 @@
 
     form {
       :nth-child(1) {
-        border: 1px solid variables.$gray-text-color;
+        border: 1px solid variables.$secondary-color;
       }
     }
   }
@@ -37,16 +37,17 @@
 
     a {
       padding: 0.6rem;
-      border: 1px solid variables.$gray-text-color;
-      transition: background-color 0.4s;
+      border: 1px solid variables.$secondary-color;
+      transition: background-color variables.$transition-animations;
       &:hover {
-        background-color: variables.$gray-text-color;
+        background-color: variables.$secondary-color;
       }
 
       i {
         height: 100%;
         width: 100%;
         color: variables.$dark-color;
+        transition: color variables.$transition-animations;
         &:hover {
           color: variables.$primary-color;
         }

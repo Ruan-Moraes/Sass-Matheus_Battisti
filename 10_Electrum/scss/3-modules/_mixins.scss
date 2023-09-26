@@ -12,19 +12,19 @@
 }
 
 @mixin xl {
-  @media screen and (max-width: 75rem) {
+  @media screen and (max-width: variables.$xl) {
     @content;
   }
 }
 
 @mixin lg {
-  @media screen and (max-width: 62rem) {
+  @media screen and (max-width: variables.$lg) {
     @content;
   }
 }
 
 @mixin md {
-  @media screen and (max-width: 48rem) {
+  @media screen and (max-width: variables.$md) {
     @content;
   }
 }

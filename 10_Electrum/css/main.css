@@ -57,11 +57,17 @@ i {
   align-items: center;
   gap: 1rem;
 }
-.Information__Container .Container__CurrencyAndAccount .CurrencyAndAccount__Account i {
+.Information__Container
+  .Container__CurrencyAndAccount
+  .CurrencyAndAccount__Account
+  i {
   margin-right: 0.4rem;
 }
 
-.Main__Promotion .Promotion__Container .Promotion__Content a, .Items__Container .Container__Products .Products__Item .Item__Main a, .Main__Newsletter .Newsletter__Form form :nth-child(2), .Main__Container .Container__Form form :nth-child(2) {
+.Main__Promotion .Promotion__Container .Promotion__Content a,
+.Items__Container .Container__Products .Products__Item .Item__Main a,
+.Main__Newsletter .Newsletter__Form form :nth-child(2),
+.Main__Container .Container__Form form :nth-child(2) {
   padding: 0.6rem 1.2rem;
   font-weight: 700;
   text-align: center;
@@ -70,41 +76,51 @@ i {
   border-radius: 999px;
   border: 2px solid #d10024;
   cursor: pointer;
-  transition: color 0.4s, background-color 0.4s;
+  transition: color 4s, background-color 4s;
 }
-.Main__Promotion .Promotion__Container .Promotion__Content a:hover, .Items__Container .Container__Products .Products__Item .Item__Main a:hover, .Main__Newsletter .Newsletter__Form form :hover:nth-child(2), .Main__Container .Container__Form form :hover:nth-child(2) {
+.Main__Promotion .Promotion__Container .Promotion__Content a:hover,
+.Items__Container .Container__Products .Products__Item .Item__Main a:hover,
+.Main__Newsletter .Newsletter__Form form :hover:nth-child(2),
+.Main__Container .Container__Form form :hover:nth-child(2) {
   color: #d10024;
   background-color: #fff;
 }
 
-.Main__Newsletter .Newsletter__Title, .Main__Promotion .Promotion__Container .Promotion__Content h2, .Items__Container .Container__Title {
+.Main__Newsletter .Newsletter__Title,
+.Main__Promotion .Promotion__Container .Promotion__Content h2,
+.Items__Container .Container__Title {
   margin: 2rem 0 1rem 0;
   font-size: 2rem;
   letter-spacing: 2px;
   color: #333;
 }
 
-.Main__Newsletter .Newsletter__Form form, .Main__Container .Container__Form form {
+.Main__Newsletter .Newsletter__Form form,
+.Main__Container .Container__Form form {
   display: flex;
 }
-.Main__Newsletter .Newsletter__Form form :nth-child(1), .Main__Container .Container__Form form :nth-child(1) {
+.Main__Newsletter .Newsletter__Form form :nth-child(1),
+.Main__Container .Container__Form form :nth-child(1) {
   width: 20rem;
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  transition: background-color 0.4s;
+  transition: background-color 4s;
 }
-.Main__Newsletter .Newsletter__Form form :nth-child(1):focus, .Main__Container .Container__Form form :nth-child(1):focus {
+.Main__Newsletter .Newsletter__Form form :nth-child(1):focus,
+.Main__Container .Container__Form form :nth-child(1):focus {
   outline: none;
   background-color: #e4e7ed;
 }
 @media screen and (max-width: 48rem) {
-  .Main__Newsletter .Newsletter__Form form :nth-child(1), .Main__Container .Container__Form form :nth-child(1) {
+  .Main__Newsletter .Newsletter__Form form :nth-child(1),
+  .Main__Container .Container__Form form :nth-child(1) {
     width: 14rem;
   }
 }
-.Main__Newsletter .Newsletter__Form form :nth-child(2), .Main__Container .Container__Form form :nth-child(2) {
+.Main__Newsletter .Newsletter__Form form :nth-child(2),
+.Main__Container .Container__Form form :nth-child(2) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -152,10 +168,22 @@ i {
   align-items: center;
   gap: 0.25rem;
 }
-.Main__Container .Container__FavoritesAndCart .FavoritesAndCart__Favorites .Favorites__qty,
-.Main__Container .Container__FavoritesAndCart .FavoritesAndCart__Favorites .Cart__qty,
-.Main__Container .Container__FavoritesAndCart .FavoritesAndCart__Cart .Favorites__qty,
-.Main__Container .Container__FavoritesAndCart .FavoritesAndCart__Cart .Cart__qty {
+.Main__Container
+  .Container__FavoritesAndCart
+  .FavoritesAndCart__Favorites
+  .Favorites__qty,
+.Main__Container
+  .Container__FavoritesAndCart
+  .FavoritesAndCart__Favorites
+  .Cart__qty,
+.Main__Container
+  .Container__FavoritesAndCart
+  .FavoritesAndCart__Cart
+  .Favorites__qty,
+.Main__Container
+  .Container__FavoritesAndCart
+  .FavoritesAndCart__Cart
+  .Cart__qty {
   position: absolute;
   top: -0.5rem;
   right: 0;
@@ -206,11 +234,13 @@ i {
   }
 }
 .Navigation__Container .Navigation__MenuForDesktop .MenuForDesktop__Links {
-  color: #2b2d42;
+  color: #333;
   border-bottom: 2px solid transparent;
-  transition: color 0.4s, border-color 0.4s;
+  transition: color 4s, border-color 4s;
 }
-.Navigation__Container .Navigation__MenuForDesktop .MenuForDesktop__Links:hover {
+.Navigation__Container
+  .Navigation__MenuForDesktop
+  .MenuForDesktop__Links:hover {
   color: #d10024;
   border-color: #d10024;
 }
@@ -304,9 +334,12 @@ i {
 .BannersNew__Container .Container__Banner .Banner__Content .Content_ViewMore {
   font-size: 1.25rem;
   color: #fff;
-  transition: text-shadow 0.4s;
+  transition: text-shadow 4s;
 }
-.BannersNew__Container .Container__Banner .Banner__Content .Content_ViewMore:hover {
+.BannersNew__Container
+  .Container__Banner
+  .Banner__Content
+  .Content_ViewMore:hover {
   text-shadow: 2px 2px 8px #333;
 }
 @media screen and (max-width: 75rem) {
@@ -317,9 +350,12 @@ i {
     font-size: 1rem;
     background-color: #15161d;
     border-radius: 999px;
-    transition: scale 0.4s;
+    transition: scale 4s;
   }
-  .BannersNew__Container .Container__Banner .Banner__Content .Content_ViewMore:hover {
+  .BannersNew__Container
+    .Container__Banner
+    .Banner__Content
+    .Content_ViewMore:hover {
     scale: 1.1;
   }
 }
@@ -384,7 +420,11 @@ i {
   align-items: center;
   gap: 1.5rem;
 }
-.Items__Container .Container__Products .Products__Item .Item__Header span:nth-child(1) {
+.Items__Container
+  .Container__Products
+  .Products__Item
+  .Item__Header
+  span:nth-child(1) {
   position: absolute;
   top: 0;
   right: 0;
@@ -395,7 +435,11 @@ i {
 .Items__Container .Container__Products .Products__Item .Item__Header img {
   width: 100%;
 }
-.Items__Container .Container__Products .Products__Item .Item__Header span:nth-child(3) {
+.Items__Container
+  .Container__Products
+  .Products__Item
+  .Item__Header
+  span:nth-child(3) {
   color: #b9babc;
 }
 .Items__Container .Container__Products .Products__Item .Item__Main {
@@ -466,7 +510,11 @@ i {
   font-weight: 700;
 }
 @media screen and (max-width: 48rem) {
-  .Main__Promotion .Promotion__Container .Promotion_Accountant div :nth-child(2) {
+  .Main__Promotion
+    .Promotion__Container
+    .Promotion_Accountant
+    div
+    :nth-child(2) {
     font-size: 0.8rem;
   }
 }
@@ -546,7 +594,7 @@ i {
 .Main__Newsletter .Newsletter__SocialMedias a {
   padding: 0.6rem;
   border: 1px solid #b9babc;
-  transition: background-color 0.4s;
+  transition: background-color 4s;
 }
 .Main__Newsletter .Newsletter__SocialMedias a:hover {
   background-color: #b9babc;
@@ -555,6 +603,7 @@ i {
   height: 100%;
   width: 100%;
   color: #333;
+  transition: color 4s;
 }
 .Main__Newsletter .Newsletter__SocialMedias a i:hover {
   color: #d10024;
@@ -635,6 +684,12 @@ i {
 .Content__FooterContainer .FooterContent__Informations div a,
 .Content__FooterContainer .FooterContent__Menu div a {
   color: #b9babc;
+  transition: color 4s;
+}
+.Content__FooterContainer .FooterContainer__Categories div a:hover,
+.Content__FooterContainer .FooterContent__Informations div a:hover,
+.Content__FooterContainer .FooterContent__Menu div a:hover {
+  color: #fff;
 }
 
 .CardsAndCopy__Container {
@@ -666,7 +721,7 @@ i {
 .CardsAndCopy__Container .Container__Cards i {
   color: #b9babc;
   cursor: pointer;
-  transition: color 0.4s;
+  transition: color 4s;
 }
 .CardsAndCopy__Container .Container__Cards i:hover {
   color: #d10024;
