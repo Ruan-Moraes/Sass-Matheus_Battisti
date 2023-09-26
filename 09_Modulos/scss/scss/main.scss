@@ -1,0 +1,194 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+@use "sass:string";
+
+// Color
+
+$color-adjust: color.adjust(#6b717f, $red:25);
+$color-adjust2: color.adjust(#6b717f, $red:25, $blue: 70);
+
+.color1-normal {
+    background-color: #6b717f;
+}
+
+.color-1 {
+    color: $color-adjust;
+    background-color: $color-adjust2;
+}
+
+@debug color.blue($color-adjust);
+@debug color.blue($color-adjust2);
+
+$color-scale: color.scale($color-adjust, $lightness: -40%);
+$color-scale2: color.scale($color-adjust2, $lightness: 40%);
+
+.color2-normal {
+    background-color: $color-adjust;
+}
+
+.color-2 {
+    background-color: $color-scale;
+}
+
+.color3-normal {
+    background-color: $color-adjust2;
+}
+
+.color-3 {
+    background-color: $color-scale2;
+}
+
+.color4-normal {
+    background-color: $color-scale2;
+}
+
+.color-4 {
+    background-color: color.invert($color-scale2);
+}
+
+.color-5 {
+    background-color: color.mix(#123123, #4f2f3f);
+}
+
+.color6-normal {
+    background-color: #4f1f33
+}
+
+.color-6 {
+    background-color: desaturate(#4f1f33, 30%);
+}
+
+.color7-normal {
+    background-color: #4f1f33;
+}
+
+.color-7 {
+    background-color: lighten(#4f1f33, 60%);
+}
+
+// List
+
+$lista: 10px, 20px, 30px;
+
+@debug $lista;
+
+$lista: list.append($lista, 40px);
+
+@debug $lista;
+
+@debug list.index($lista, 20px);
+
+@if list.index($lista, 10px) == 1 {
+    $lista: list.append($lista, 50px)
+}
+
+@debug $lista;
+
+$lista2: 60px, 70px, 80px, 90px, 100px;
+
+$lista3: list.join($lista, $lista2);
+
+@debug $lista3;
+
+@debug list.length($lista);
+@debug list.length($lista2);
+@debug list.length($lista3);
+
+@debug list.nth($lista, 3);
+@debug list.nth($lista3, 6);
+
+$font-size-title: list.nth($lista3, 4);
+
+@debug $font-size-title;
+
+h1 {
+    font-size: $font-size-title;
+}
+
+// Map
+
+$m: ("font": 3px, "color": blue, "bold": false);
+$n: ("border": 2px solid red, "transition": 1s);
+
+@debug $m;
+@debug $n;
+
+$x: map.merge($m, $n);
+
+@debug $x;
+
+$border-title: map.get($x, "border");
+
+h1 {
+    border: $border-title;
+}
+
+@debug $border-title;
+
+@debug map.has-key($x, "border");
+@debug map.has-key($x, "teste");
+
+@if map.has-key($x, "teste") == false {
+    h1 {
+        border-bottom: 4px solid blue;
+    }
+}
+
+// Math
+
+$pi: math.$pi;
+
+@debug $pi;
+
+$z: 3.1;
+
+@debug math.ceil($z);
+@debug math.floor($z);
+
+@debug math.floor($pi);
+
+$a: 1, 2, 3, 4, 5;
+
+@debug math.max($a...);
+@debug math.min($a...);
+
+@debug math.floor(math.random() * 10);
+
+// Meta
+
+@debug meta.global-variable-exists("a");
+@debug meta.global-variable-exists("Não existe");
+
+@debug meta.inspect($a);
+
+@mixin test {
+    margin: 0;
+    padding: 0;
+}
+
+@debug meta.mixin-exists("test");
+@debug meta.mixin-exists("test2");
+
+@debug meta.type-of(("asd": 1));
+@debug meta.type-of($a);
+@debug meta.type-of("olá");
+@debug meta.type-of(Bold);
+@debug meta.type-of(#fff);
+
+// String
+
+$frase: "O rato roeu a roupa do rei de roma";
+
+@debug string.index($frase, "rei");
+@debug string.index($frase, "Brasil");
+
+@debug string.length($frase);
+
+@debug string.to-lower-case($frase);
+@debug string.to-upper-case($frase);
+
+@debug string.unique-id();
+@debug string.unique-id();

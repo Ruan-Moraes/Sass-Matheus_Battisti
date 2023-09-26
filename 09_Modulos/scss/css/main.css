@@ -1,0 +1,66 @@
+.color1-normal {
+  background-color: #6b717f;
+}
+
+.color-1 {
+  color: #84717f;
+  background-color: #8471c5;
+}
+
+.color2-normal {
+  background-color: #84717f;
+}
+
+.color-2 {
+  background-color: #4f444c;
+}
+
+.color3-normal {
+  background-color: #8471c5;
+}
+
+.color-3 {
+  background-color: #b5aadc;
+}
+
+.color4-normal {
+  background-color: #b5aadc;
+}
+
+.color-4 {
+  background-color: #4a5523;
+}
+
+.color-5 {
+  background-color: #313031;
+}
+
+.color6-normal {
+  background-color: #4f1f33;
+}
+
+.color-6 {
+  background-color: #3f3036;
+}
+
+.color7-normal {
+  background-color: #4f1f33;
+}
+
+.color-7 {
+  background-color: #e5bbcd;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1 {
+  border: 2px solid red;
+}
+
+h1 {
+  border-bottom: 4px solid blue;
+}
+
+/*# sourceMappingURL=main.css.map */
